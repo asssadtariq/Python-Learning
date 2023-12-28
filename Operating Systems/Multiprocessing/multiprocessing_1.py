@@ -4,13 +4,13 @@ import time
 def count_word(text, word, return_queue):
     text = text.replace(",", "")
     time.sleep(10)
-    print("Word = ", text.split(" ").count(word))
-    return_queue.put(text.split(" ").count(word) + 10)
+    print("In Count Word function..")
+    return_queue.put(text.split(" ").count(word))
 
 def count_character(text, char, return_queue):
     time.sleep(5)
-    print("Character Count = ", text.count(char))
-    return_queue.put(text.count(char) + 10)
+    print("In Count Character function..")
+    return_queue.put(text.count(char))
 
 def main():
     text = '''
